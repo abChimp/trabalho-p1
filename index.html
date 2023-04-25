@@ -1,0 +1,44 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bauru do Zé Guloso</title>
+  <style>
+h2 {
+  text-align: center;
+}
+
+#topo {
+  display: flex;
+  justify-content: center;
+}
+
+input,textarea {
+  display: block;
+}
+  </style>
+</head>
+<body> 
+  <h2>
+  Bauru do Zé Guloso
+  </h2>
+  <div id="topo">
+   
+  <img src="https://cdn.tasteatlas.com/images/dishes/710b50c4e8ef474086b75e8d5519dc1e.jpg?mw=1300" alt="Sanduíche Bauru" width="300" height="200">
+  </div>
+  <p>O Bauru do Zé Guloso oferece além do tradicional sanduíche paulista um menu diversificado de sanduíches no pãozinho nosso de cada dia.</p>
+  <form action="">
+    <label for="email"></label>
+    E-mail:<input type="email" id="email" name="email" required>
+    <label for="info">Mais informações</label>
+    <textarea id="info"></textarea>
+    <input type="submit" onclick="msgWA()">
+  </form>
+  
+  <script>
+    function msgWA() {
+	let email = document.getElementById('email').value;
+	window.open("https://wa.me/5522936009770?text=" + email,"width=300,height=400");
+    }
+  </script>
+</body>
+</html>
